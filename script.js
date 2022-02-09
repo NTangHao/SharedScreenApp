@@ -40,10 +40,8 @@ stopbutton.addEventListener('click',()=>{
 
 //Make button trigger move picture in picture when click
 movebutton.addEventListener('click',async ()=>{
-    //Disable button
-    button.disabled = true;
+
     //Start Picture in picture
     await videoElement.requestPictureInPicture();
-    //Reset Button
-    button.disabled = false;
+
 });
